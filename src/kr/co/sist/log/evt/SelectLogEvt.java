@@ -59,7 +59,7 @@ public class SelectLogEvt implements ActionListener {
             calCode403Share();
          
             // 결과창
-            new Result(this, sl);
+            new Result(this);
             System.out.println("결과창 생성자 호출");
 
          } catch (FileNotFoundException fnfe) {
