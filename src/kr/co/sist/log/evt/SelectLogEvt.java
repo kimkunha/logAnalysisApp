@@ -170,10 +170,38 @@ public class SelectLogEvt implements ActionListener {
 		}
 	}
 	
+	/////////////////////////// 12-22-2018 키값 카운트 메소드 구현(건하) ///////////////////////////////
 	public void countKey(String temp) {
-	
 		// 1. 최다 사용 Key의 이름과 횟수를 구하는 method
-	}
+		String str=null;
+		
+		if(temp.contains("key")) {
+			
+		str=temp.substring(temp.indexOf("="), temp.indexOf("&")+1);
+		str.substring(1,str.length());
+		System.out.println(str);
+//		System.out.println(str);
+		
+		}//end if
+		
+		
+//		if(str.endsWith("&")) {
+//			System.out.println(str);
+				
+//		System.out.println(str);
+//		Set<String>allkeys=mapKey.keySet();	//모든 키 얻기
+//		Iterator<String>ita=allkeys.iterator();	//모든 값 얻기
+//		Integer count=0;
+//		while(ita.hasNext()) {
+//			count=mapKey.get(ita.next());
+//			count++;
+//		}
+	
+	
+	
+	
+	}//countKey
+	/////////////////////////// 12-22-2018 키값 카운트 메소드 끝 ///////////////////////////////
 	
 	public void countBrowser(String temp) {
 		
